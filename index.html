@@ -757,6 +757,7 @@ if ('IntersectionObserver' in window) {
     });
   }, { rootMargin: '-45% 0px -50% 0px' });
   enlaces.forEach(a => { const sec = document.querySelector(a.getAttribute('href')); if (sec) obs.observe(sec); });
+  obs.observe(document.querySelector('.portada'));
 
   // Botón flotante de WhatsApp: aparece al bajar y se oculta en Contacto
   const flotante = document.querySelector('.wa-flotante');
