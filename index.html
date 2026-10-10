@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Néstor Tamayo | Sistemas web a medida en Lima</title>
+<title>Ing. Néstor Tamayo | Sistemas web a medida en Lima</title>
 <meta name="description" content="Sistemas web a medida, aulas virtuales, libro de reclamaciones virtual y páginas web con mantenimiento para negocios, academias e instituciones en el Perú.">
-<meta property="og:title" content="Néstor Tamayo | Sistemas web a medida">
+<meta property="og:title" content="Ing. Néstor Tamayo | Sistemas web a medida">
 <meta property="og:description" content="Deja el Excel y el papel. Pasa a un sistema moderno y fácil de usar. Sistemas web, aulas virtuales y páginas con mantenimiento.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nestoremilio.github.io/">
@@ -13,7 +13,7 @@
 <meta property="og:image" content="https://nestoremilio.github.io/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Néstor Tamayo. Deja el Excel y el papel. Pasa a un sistema moderno y fácil de usar.">
+<meta property="og:image:alt" content="Ing. Néstor Tamayo. Deja el Excel y el papel. Pasa a un sistema moderno y fácil de usar.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#090B11">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0D12'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%23FF6B3D'%3ENT%3C/text%3E%3C/svg%3E">
@@ -56,7 +56,11 @@ a{color:inherit}
 /* ---------- cabecera ---------- */
 .cabecera{position:sticky;top:0;z-index:30;background:rgba(9,11,17,.66);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);color:var(--texto-1)}
 .cabecera::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.14) 30%,rgba(255,138,91,.35) 50%,rgba(255,255,255,.14) 70%,transparent)}
-.cabecera .contenedor{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px;flex-wrap:wrap}
+.cabecera .contenedor{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:70px;flex-wrap:nowrap}
+.marca{white-space:nowrap}
+@media (max-width:420px){.cabecera .marca{font-size:18px}.abrir-menu{padding:0 12px !important}}
+@media (max-width:360px){.cabecera .contenedor{padding:0 16px}.cabecera .marca{font-size:17px}}
+@media (max-width:340px){.cabecera .marca{font-size:15.5px}}
 .marca{font-family:var(--display);font-weight:800;font-size:21px;text-decoration:none;color:var(--texto-1);letter-spacing:-.01em}
 .marca span{color:var(--acento);text-shadow:0 0 14px rgba(255,107,61,.8)}
 .menu{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
@@ -354,7 +358,7 @@ a{color:inherit}
 
 <header class="cabecera">
   <div class="contenedor">
-    <a class="marca" href="#inicio">Néstor Tamayo<span>.</span></a>
+    <a class="marca" href="#inicio">Ing. Néstor Tamayo<span>.</span></a>
     <button class="abrir-menu" type="button" aria-expanded="false" aria-controls="menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menú
     </button>
